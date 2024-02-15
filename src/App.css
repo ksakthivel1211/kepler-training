@@ -1,0 +1,13 @@
+.App {
+  width: 80%;
+  margin: 9rem auto;
+}
+
+.card-holder{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 20px;
+  margin-top: 5rem;
+}
+
