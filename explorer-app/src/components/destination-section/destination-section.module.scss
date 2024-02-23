@@ -1,0 +1,24 @@
+.destination-wrapper{
+    margin: 6.1rem 7rem;
+    color: var(--dark-purple);
+
+    >h6{
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    >p{
+        margin: 0;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+        margin-top: 5px;
+    }
+
+    .card-holder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 4.6rem;
+    }
+}

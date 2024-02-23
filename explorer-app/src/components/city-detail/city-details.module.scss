@@ -1,0 +1,79 @@
+.details-section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+
+    .city-detail-wrapper{
+        margin-top: 15rem;
+        position: relative;
+
+        .city-name-wrapper{
+            color: var(--dark-purple);
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .city-line-wrapper{
+            position: absolute;
+            color: white;
+            width: 60rem;
+            background-color: var(--dark-purple);
+            padding: 4rem 4rem;
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.5;
+            text-overflow: ellipsis;
+            z-index: 1;
+            bottom: 8rem;
+        }
+
+        .city-temperature-wrapper{
+            margin: 0;
+            font-size: 4.5rem;
+            margin-top: 21.2rem;
+        }
+    }
+
+    .img-holder{
+        width: 63rem;
+        height: 47.5rem;
+    }
+}
+
+.city-description-wrapper{
+    margin: 6.2rem 7rem;
+
+    p{
+        font-size: 2.5rem;
+    }
+}
+
+.recommendation-section
+{
+    margin: 6.2rem 7rem;
+
+    >h5,>p{
+        color: var(--dark-purple);
+        margin: 0;
+    }
+
+    >h5{
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    >p{
+        font-size: 1.5rem;
+    }
+
+
+    .card-holder{
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 2.5rem;
+    }
+}
+
+

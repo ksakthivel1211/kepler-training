@@ -1,0 +1,23 @@
+.primary
+{
+    background-color: var(--dark-purple);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.9rem 2rem;
+}
+
+.secondary{
+    background-color: white;
+    color: var(--dark-purple);
+    font-size: 1rem;
+}
+
+.btn{
+    border: none;
+    width: max-content;
+    cursor: pointer;
+}
+
+.explore{
+    padding: 0.9rem 2.5rem;
+}
