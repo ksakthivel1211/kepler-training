@@ -1,0 +1,20 @@
+.badgeWrapper{
+    border: 1px solid var(--border-blue);
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    color: var(--powder-blue);
+    background-color: white;
+    overflow: hidden;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.badgeWrapper:hover{
+    background-color: var(--powder-blue);
+    color: white;
+    border-color: transparent;
+}

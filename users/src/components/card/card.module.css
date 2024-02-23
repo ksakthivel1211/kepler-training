@@ -1,0 +1,56 @@
+.img-wrapper{
+    margin-top: 10px;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content-overflow{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+    margin: 8px 0;
+}
+
+.location{
+    font-weight: 600;
+}
+
+.img{
+    object-fit: cover;
+}
+
+.card-wrapper{
+    width: calc((100% / 3) - 71px);
+    height: 14.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 27px;
+    border-radius: 20px;
+    background-color: #fbfcff;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-wrapper:hover{
+    border-color: var(--border-blue);
+    box-shadow: var(--powder-blue) 0px 0px 13px -3px;
+}
+
+.user-details-wrapper{
+    width: 68%;
+    height: 100%;
+    padding-top: 1.5rem;
+}
+
+.badge-holder{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 46%;
+    overflow: scroll;
+    margin-top: 15px;
+    gap: 5px;
+}
