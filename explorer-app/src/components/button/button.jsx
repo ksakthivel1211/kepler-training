@@ -1,9 +1,9 @@
-import classes from "./button.module.css";
+import classes from "./button.module.scss";
 
-const Button = ({buttonType,children,section})=>{
+const Button = ({buttonType,children,section,onClickFunction})=>{
 
     return (
-        <button className={`${classes[buttonType]} roboto-medium ${classes['btn']} ${classes[section]}`}>
+        <button onClick={onClickFunction} className={`${classes[buttonType]} roboto-medium ${classes['btn']} ${classes[section]}`}>
             {children}
         </button>
     );

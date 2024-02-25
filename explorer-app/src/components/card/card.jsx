@@ -18,7 +18,7 @@ const Card = ({cityName,cityLine,cityDescription,cityImage})=>{
             <p className={classes['city-description']}>{cityDescription}</p>
 
             <Link to = {`/${cityName}`}>
-                <Button buttonType={'primary'}>READ MORE</Button>
+                <Button onClickFunction={scrollToTop} buttonType={'primary'}>READ MORE</Button>
             </Link>
 
         </div>
