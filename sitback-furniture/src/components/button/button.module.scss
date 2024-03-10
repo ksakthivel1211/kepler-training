@@ -1,0 +1,44 @@
+.btn{
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+}
+
+.btn-wrapper{
+
+}
+
+.header{
+
+    .btn{
+        padding: 0 0 1rem 0;
+    }
+    &:hover{
+        .tab{
+            background-color: #fff08b;
+        }
+    }
+}
+
+.primary-btn{
+    background-color: var(--common-yellow);
+    color: white;
+    border-bottom-right-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.secondary-btn{
+    background-color: white;
+    color: black;
+}
+
+.tab{
+    min-width: max-content;
+    height: 0.6rem;
+}
+
+.active-tab{
+    background-color: #ffdd00;
+}

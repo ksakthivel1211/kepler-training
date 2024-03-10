@@ -1,0 +1,12 @@
+.shopping-page-wrapper{
+
+    width: 96.3%;
+    margin: auto;
+
+    .card-holder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+    }
+}
