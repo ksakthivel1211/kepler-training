@@ -38,9 +38,9 @@ const Home = ()=>{
 
 
     return (
-        <main>
-            <h5>Your Home, With Love</h5>
-            <p>Come, Choose from millions of products</p>
+        <main className={styles['home-page-wrapper']}>
+            <h5 className={styles['heading']}>Your Home, With Love</h5>
+            <p className={styles['sub-heading']}>Come, Choose from millions of products</p>
             <div className={styles['card-holder']}>
                 {
                     isLoading ?
