@@ -1,39 +1,48 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Button from "../button/button";
 import styles from './header.module.scss';
+import { headerData } from "../../constants/string-constant";
 
 const Header = ()=>
 {
-    const tabList = ['COUCHES','CHAIRS','DINING'];
+    const {categoryId} = useParams();
+    const location = useLocation();
+    const tabList = ['couches','chairs','dining'];
     const [selectedTab,setSelectedTab] = useState();
 
     function onButtonClick(buttonValue)
     {
-        setSelectedTab(buttonValue)
+        setSelectedTab(buttonValue);
     }
 
+    useEffect(()=>{
+        setSelectedTab(categoryId);
+    },[location])
+
     const navButtonSection = tabList.map((val,index)=>(
-        <Link to={`/shopping/${val.toLowerCase()}`}>
+        <Link key={index} to={`/shopping/${val}`}>
             <Button type='secondary-btn' 
                 isSelected={val === selectedTab} 
                 onSelect = {()=>onButtonClick(val)}
                 section='header'
-                key={index}>{val}
+                key={index}>{val.toUpperCase()}
             </Button>
         </Link>
     ));
 
     return(
         <header className={styles['header-wrapper']}>
-            <div className={styles['logo-wrapper']}>
-                SITBACK
-            </div>
+            <Link to={'/'}>
+                <div className={styles['logo-wrapper']}>
+                    {headerData.logo}
+                </div>
+            </Link>
             <div className={styles['btn-wrapper']}>
                 {navButtonSection}
             </div>
             <div>
-                Profile
+                {headerData.profile}
             </div>
         </header>
     )

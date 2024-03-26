@@ -2,33 +2,36 @@
     border: none;
     font-weight: 600;
     font-size: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.7rem 1.5rem;
     cursor: pointer;
+    border-bottom-right-radius: 0.5rem;
 }
 
-.btn-wrapper{
-
+.btn-wrapper .btn.small{
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-bottom-right-radius: 0.3rem;
 }
 
-.header{
+.header,.side-menu{
 
     .btn{
         padding: 0 0 1rem 0;
     }
     &:hover{
         .tab{
-            background-color: #fff08b;
+            // background-color: #fff08b;
+            background-color: #484848;
         }
     }
 }
 
 .primary-btn{
-    background-color: var(--common-yellow);
+    background-color: black;
     color: white;
-    border-bottom-right-radius: 0.5rem;
     font-size: 0.8rem;
     width: max-content;
-    padding: 0.8rem 1rem;
 }
 
 .secondary-btn{
@@ -45,11 +48,36 @@
     padding: 0.8rem 0rem;
 }
 
-.tab{
-    min-width: max-content;
-    height: 0.6rem;
+.header{
+    .tab{
+        min-width: max-content;
+        height: 0.6rem;
+    }
+    .btn{
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
 }
 
+.side-menu{
+    .tab{
+        min-width: max-content;
+        height: 0.15rem;
+    }
+
+    .btn{
+        color: #888888;
+        font-weight: 400;
+    }
+
+    .btn.selected{
+        color: black;
+        font-weight: 600;
+    }
+}
+
+
 .active-tab{
-    background-color: #ffdd00;
+    // background-color: #ffdd00;
+    background-color: black;
 }

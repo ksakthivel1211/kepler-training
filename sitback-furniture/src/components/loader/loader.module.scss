@@ -1,0 +1,10 @@
+.loader-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-loader{
+    transform: rotateY(180deg);
+}

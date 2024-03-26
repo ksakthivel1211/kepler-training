@@ -2,9 +2,10 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import CategoryCard from '../../components/cards/category-card/category-card';
 import styles from './home.module.scss';
-import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader'
+import Loader from '../../components/loader/loader';
+import { homeData } from '../../constants/string-constant';
 
-const Home = ()=>{
+const Home = ({page})=>{
 
     const [categoryData,setData] = useState();
     const [isLoading,settIsLoading] = useState(true);
@@ -38,13 +39,13 @@ const Home = ()=>{
 
 
     return (
-        <main className={styles['home-page-wrapper']}>
-            <h5 className={styles['heading']}>Your Home, With Love</h5>
-            <p className={styles['sub-heading']}>Come, Choose from millions of products</p>
+        <main className={`${styles['home-page-wrapper']} ${styles[page]}`}>
+            <h5 className={styles['heading']}>{homeData.heading}</h5>
+            <p className={styles['sub-heading']}>{homeData.subHeading}</p>
             <div className={styles['card-holder']}>
                 {
                     isLoading ?
-                    (<ClimbingBoxLoader color='#ffdd00'></ClimbingBoxLoader>)
+                    <Loader></Loader>
                     :
                     (
                         <>
