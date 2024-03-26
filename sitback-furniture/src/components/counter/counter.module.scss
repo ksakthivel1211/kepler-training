@@ -1,0 +1,13 @@
+.counter-button-wrapper{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    justify-content: space-around;
+    padding: 0.4rem;
+    background-color: white;
+    user-select: none;
+
+    .update-btn{
+        cursor: pointer;
+    }
+}

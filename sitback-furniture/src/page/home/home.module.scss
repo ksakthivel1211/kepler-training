@@ -1,0 +1,27 @@
+.home-page-wrapper{
+    width: 82.4%;
+    margin: 4rem auto;
+    // margin-top: 4rem;
+
+    .heading,.sub-heading{
+        margin: 0;
+    }
+
+    .heading{
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .sub-heading{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-holder{
+        display: flex;
+        column-gap: 1rem;
+        justify-content: space-between;
+    }
+}
+

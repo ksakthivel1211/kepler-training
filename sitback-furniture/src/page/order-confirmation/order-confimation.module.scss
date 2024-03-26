@@ -1,0 +1,22 @@
+.order-page-wrapper{
+    padding: 4rem 10rem;
+    background-color: var(--light-gray);
+
+    .heading-wrapper{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .description-wrapper{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-holder{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
